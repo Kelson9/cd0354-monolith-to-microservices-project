@@ -1,0 +1,4 @@
+export AWS_BUCKET=arn:aws:s3:::test-2468-dev
+export AWS_REGION=us-east-1
+export AWS_PROFILE=default
+export JWT_SECRET=testing
