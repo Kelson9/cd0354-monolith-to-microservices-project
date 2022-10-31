@@ -17,5 +17,13 @@ spec:
       containers:
       - name: udagram-api-feed
         image: kelson9/udagram-api-feed
+        envFrom:
+          - secretRef:
+              name: env-secret
+          - secretRef: 
+              name: aws-secret
+          - configMapRef:
+              name: env-configmap
         ports:
-        - containerPort: 80
+         - containerPort: 8080
+
